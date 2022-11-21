@@ -36,24 +36,38 @@ nav ul li a:hover{
     color: #FF0040;
 }
 
+#icons-contact{
+    position: fixed;
+    bottom: 0;
+    right: 70px;
+    text-align: center;
+}
+#icons-contact li{
+    margin-bottom: 10px;
+}
+
+#icons-contact li img{
+    height: 40px;
+}
+
 #dots-one{
     margin-top: 25px;
 }
 
 .welcome{
-    margin: 30px 60px;
+    margin: 15px 60px;
     font-family: 'Quantico';
     font-style: normal;
     font-weight: 400;
 }
 
 .welcome h1{
-    font-size: 130px;
+    font-size: 100px;
     color: #FF0040;
 }
 
 .welcome h2{
-    font-size: 60px;
+    font-size: 50px;
     color: #FFFFFF;
 }
 
@@ -72,11 +86,53 @@ nav ul li a:hover{
 
 #welcome-text{
     font-family: 'Mulish';
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 15px;
+    margin-right: 300px;
     color: #FFFFFF;
 }
 
+.about-me{
+    margin: 210px 150px 210px 60px;
+}
+
+.about-me h2{
+    font-family: 'Quantico';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    
+    color: #FF0040;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+#about-me-p1{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 60px;
+    text-align: right;
+    
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 350px;
+}
+
+#about-me-p2{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 60px;
+    margin-right: 400px;
+    
+    color: #FFFFFF;
+}
 
 /*javascripts*/
 #BackgroundAnimation-top li{
@@ -117,6 +173,6 @@ nav ul li a:hover{
     }
     to{
         opacity: 0;
-        transform: translateY(1000px);
+        transform: translateY(2000px);
     }
 }
