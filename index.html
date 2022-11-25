@@ -1,71 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/index.css">
-        <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Quantico&display=swap" rel="stylesheet">
-        <title>Karen Silva</title>
-    </head>
-    <body>
-        <header>
-            <div id="menu">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Welcome</a></li>
-                        <li><a href="#about-me">About-me</a></li>
-                        <li><a href="#experiences">Experiences</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-
-            <div id="icons-contact">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Quantico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <script type="text/javascript" src="./js/nav-mobile.js"></script>
+    <title>Karen Silva</title>
+</head>
+<body>
+    <header class="Welcome" >
+        <div id="menu">
+            <nav>
+                <!--O botão menuClose abaixo aparece junto com o menu e fica escondido junto com ele tb-->
+                <div class="mobile-menu-close">
+                    <button class="nav-button" onclick="closeNav()"><i class="bi bi-x-square"></i></button>
+                </div>
                 <ul>
-                    <li><a href="https://github.com/asullyy" target="_blank"><img src="./img/icons/github-icon.png" alt=""></a></li>
-                    <li><a href="mailto:sulianyy@gmail.com" target="_blank"><img src="./img/icons/gmail-icon.png" alt=""></a></li>
-                    <li><a href="https://www.linkedin.com/in/sulliany-souzaa/" target="_blank"><img src="./img/icons/linkdin-icon.png" alt=""></a></li>
+                    <li><a href="index.html">Welcome</a></li>
+                    <li><a href="#arrow-welcome">About Me</a></li>
+                    <li><a href="#arrow-aboutMe">Stacks</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
-                <img src="./img/icons/barra.png" alt="">
+            </nav>
+            <!--Já esse botão fica estático na página e pode ser acionado a qualquer momento pelo user-->
+        </div>
+        <div class="mobile-menu-open">
+            <button class="nav-button" onclick="openNav()"><i class="bi bi-list"></i></button>
+        </div>
+    </header>
+    <main>
+        <div id="icons-contact">
+            <ul>
+                <li><a href="https://github.com/asullyy" target="_blank"><img src="./img/icons/github-icon.png" alt=""></a></li>
+                <li><a href="mailto:sulianyy@gmail.com" target="_blank"><img src="./img/icons/gmail-icon.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/sulliany-souzaa/" target="_blank"><img src="./img/icons/linkdin-icon.png" alt=""></a></li>
+            </ul>
+            <img src="./img/icons/barra.png" alt="">
+        </div>  
+        <section class="content-welcome" id="welcome">
+            <h1>Karen Silva</h1>
+            <h2>Frontend Engineer</h2>
+            <p id="welcome-line"></p>
+            <h3>Hello World!</h3>
+            <p id="aboutMe">Hi, I'm Karen, but everyone calls me Sully. I'm a front-end developer and I want to show you what I've been doing and learning on my dev journey. Welcome :)</p>
+            <div class="arrow-down" id="arrow-welcome"><a href="#arrow-welcome"><i class="bi bi-caret-down-fill"></i></a></div>    
+        </section>
+        <section class="AboutMe">
+            <h3>About my academic background...</h3>
+            <p class="pRight">I have a degree in Computer Science from the Federal University of Pará and in recent years I have dedicated myself to learning tools, languages ​​and concepts used in the frontend world</p>
+            <p class="pLeft">At the moment I've concrete knowledge in HTML, CSS, JavaScript and React. My other passion after programming is design, so I really like to design my own interfaces, for this reason I've some knowledge in UI|UX tools.</p>
+            <div class="arrow-down" id="arrow-aboutMe"><a href="#arrow-aboutMe"><i class="bi bi-caret-down-fill"></i></a></div>
+        </section>
+        <section class="Stacks" id="stacks">
+            <h3>My Stacks</h3>
+            <div>
+                <ul>
+                    <li>
+                     <img src="" alt="html icon">
+                     <h4>html|css</h4>
+                     <p>(advanced)</p>
+                    </li>
+                    <li>
+                     <img src="" alt="javaScript icon">
+                     <h4>JavaScript</h4>
+                     <p>(basic)</p>
+                    </li>
+                    <li>
+                     <img src="" alt="react icon">
+                     <h4>React</h4>
+                     <p>(basic)</p>
+                    </li> 
+                 </ul>
             </div>
+            <div>
+                <ul>
+                    <li>
+                     <img src="" alt="css icon">
+                     <h4>Media Queries</h4>
+                     <p>(basic)</p>
+                    </li>
+                    <li>
+                     <img src="" alt="css icon">
+                     <h4>Flexbox</h4>
+                     <p>(advanced)</p>
+                    </li>
+                    <li>
+                     <img src="" alt="tool icon">
+                     <h4>Figma</h4>
+                    </li> 
+                 </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                     <img src="" alt="Github icon">
+                     <h4>Github</h4>
+                     <p>(intermediate)</p>
+                    </li>
+                    <li>
+                     <img src="" alt="Python icon">
+                     <h4>Pyhton</h4>
+                     <p>(intermediate)</p>
+                    </li>
+                    <li>
+                     <img src="" alt="tool icon">
+                     <h4>Scrum</h4>
+                    </li> 
+                 </ul>
+            </div>
+            <p class="pLeft">I have other stacks with games and other programming languages. But, those are the main stacks I've been working on</p>
+        </section>
+        <section class="Experiences" id="experiences">
+            <h3>My experiences</h3>
+            <p class="pLeft">I still don't have professional experience with front-end development, but I acquired my experiences building projects that will be shown in the next section :)</p>
+            <p class="pRight">I have three professional experiences in other areas of IT, you can check my resume by clicking here or through my linkdIn</p>
+            <div class="arrow-down"><a href="#aboutMe"><i class="bi bi-caret-down-fill"></i></a></div>
+        </section>
+        <section class="Projects" id="projects">
+            <div id="img-project">
+                <img src="" alt="">
+            </div>
+            <div class="details-project">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium odio nisi aliquam dolores sapiente! Voluptatem facilis molestias commodi libero vero reiciendis. Perspiciatis, delectus? Obcaecati nihil beatae, debitis quia unde id.</p>
+                <img src="" alt="github icon ">
+                <img src="" alt="acess icon">
+            </div>
+            <div id="img-project">
+                <img src="" alt="">
+            </div>
+            <div class="details-project">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium odio nisi aliquam dolores sapiente! Voluptatem facilis molestias commodi libero vero reiciendis. Perspiciatis, delectus? Obcaecati nihil beatae, debitis quia unde id.</p>
+                <img src="" alt="github icon ">
+                <img src="" alt="acess icon">
+            </div>
+        </section>
 
-
-            </main><img id="dots-one" src="./img/dots.png" alt="dots">
-            <section class="welcome" id="welcome">
-                <h1>Karen Silva</h1>
-                <h2>Frontend Engineer</h2>
-                <p id="welcome-line"></p>
-                <p id="welcome-HelloWorld">Hello World!</p>
-                <p id="welcome-text">I'm Karen! I want to show you what I've been doing and learning on my journey as a front-end developer. Welcome :)</p>
-            </section>
-            <section class="about-me" id="about-me">
-                <h2>About my academic background...</h2>
-                <p id="about-me-p1">I have a degree in Computer Science from the Federal University of Pará and in recent years I have dedicated myself to learning tools, languages ​​and concepts used in the frontend world</p>
-                <p id="about-me-p2">At the moment I've concrete knowledge in HTML, CSS, JavaScript and React. My other passion after programming is design, so I really like to design my own interfaces, for this reason I've some knowledge in UI|UX tools.</p>
-            </section>
-            <section class="experiences" id="experiences">
-
-            </section>
-            <section class="projects" id="projects">
-
-            </section>
-            
-            <!--javaScript-->
-            <ul id="BackgroundAnimation-top">
-            </ul>
-            <ul id="BackgroundAnimation-bottom">
-            </ul>
-            <ul id="BackgroundAnimation-right">
-            </ul>
-            <ul id="BackgroundAnimation-left">
-            </ul>
-        <footer>
-
-        </footer>
-        <script src="script.js"></script>
-    </body>
+        <!--javaScript-->
+        <ul id="BackgroundAnimation-top">
+        </ul>
+        <ul id="BackgroundAnimation-bottom">
+        </ul>
+        <ul id="BackgroundAnimation-right">
+        </ul>
+        <ul id="BackgroundAnimation-left">
+        </ul>
+    </main>
+    <footer>
+        <h3>Contact-ME</h3>
+    </footer>
+    <script src="./js/nav-mobile.js"></script>
+    <script src="./js/animacao-background.js"></script>
+</body>
 </html>

@@ -1,0 +1,287 @@
+
+body{
+    background-color: #161B22;
+}
+header{
+    position: fixed;
+}
+/*Configurações padraõa h1,h2,h3 e p*/
+h1{
+    font-size: 6em;
+    color: #FF0040;
+}
+
+h2{
+    font-size: 3.5em;
+    color: #FFFFFF;
+}
+
+h3{
+    font-size: 2.5em;
+    color: #FF0040;
+}
+
+p{
+    font-family: 'Mulish';
+    font-size: 1.5em;
+    color: #FFFFFF;
+    margin: 1em 0;
+}
+
+.pRight{
+    text-align: right;
+    margin-left: 25% ;
+}
+
+.pLeft{
+    text-align: left;
+    margin-right: 25%;
+}
+/*botão do menu mobile*/
+.mobile-menu-open{
+    display: none;
+}
+.mobile-menu-close{
+    display: none;
+}
+
+/*icones laterais*/
+#icons-contact{
+    position: fixed;
+    bottom: 0;
+    right: 3.5em;
+    text-align: center;
+}
+#icons-contact li{
+    margin-bottom: .5em;
+}
+
+#icons-contact li img{
+    height: 2.5em;
+}
+
+/*Seta de indicação de rolagem*/
+
+.arrow-down a{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    margin: 1.5em 0;
+    color: #FF0040;
+}
+
+/*Menu*/
+#menu{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+.Welcome nav{
+    background-color: #0D1117;
+    width: 100%;
+}
+
+.Welcome nav ul{
+    display: flex;
+    justify-content: center;
+    padding: 1.5em;
+}
+
+.Welcome nav ul li{
+    margin: 4px 8px;
+    font-size: 1.1em;
+    font-family: "Mulish";   
+}
+
+
+.Welcome nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.Welcome nav ul li a:hover{
+    color: #FF0040;
+}
+
+/*main*/
+main{
+    padding: 0 10em;
+    margin-top: 11em;
+}
+
+/*main welcome*/
+
+.content-welcome{
+    font-family: 'Quantico';
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 3em;
+}
+
+#welcome-line{
+    width: 25%;
+    height: 0px;
+    margin: 1.5em 0;
+    border: 1px solid #FF0040;
+    transform: rotate(0.21deg);
+}
+
+.content-welcome h3{
+    color: #FFFFFF;
+}
+
+.content-welcome p{
+    margin-right: 25%;
+}
+
+/*javascripts*/
+#BackgroundAnimation-top li{
+    display: block;
+    position: absolute;
+    top: -200px;
+    animation: backgAnimation-top infinite;
+}
+
+@keyframes backgAnimation-top{
+    from{ 
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50%{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        transform: translateY(1000px);
+    }
+}
+
+#BackgroundAnimation-bottom li{
+    display: block;
+    position: absolute;
+    top: -200px;
+    animation: backgAnimation-bottom infinite reverse;
+}
+
+@keyframes backgAnimation-bottom{
+    from{ 
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50%{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        transform: translateY(2000px);
+    }
+}
+
+/*Responsividade*/
+@media screen and (max-width: 450px){
+
+    /*ajustes do menu*/
+    .mobile-menu-open{
+        display: block;
+        position: fixed;
+        top: 0;
+        padding: 1em 0;
+        padding-left: 1em;
+        cursor: pointer;
+        background-color: #0D1117;
+        width: 100%;
+    }
+
+    .mobile-menu-open button{
+        background-color: transparent;
+        border: none;
+    }
+
+    /*estilizando o ícone*/
+    .mobile-menu-open button i{
+        font-size: 30px;
+        color: #FF0040;
+    }
+
+    .mobile-menu-close{
+        display: block;
+        padding: 1.5em 1.5em 0;
+        cursor: pointer;
+    }
+
+    .mobile-menu-close button{
+        background-color: transparent;
+        border: none;
+    }
+
+    .mobile-menu-close button{
+        font-size: 20px;
+        color: #FF0040;
+        flex-direction: row-reverse;
+    }
+
+
+    /*ajustes nav*/
+    #menu{
+        height: 100%;
+        width: 0;
+        z-index: 9;
+        overflow: hidden;
+        transition: all 0.5s;
+        justify-content: start;
+
+    }
+
+    .Welcome nav{
+        width: 65%;
+    }
+    .Welcome nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .Welcome nav ul li{
+        margin: 6px 8px;
+    }
+
+    /*icones laterais*/
+    #icons-contact{
+        right: 1.2em;
+        text-align: center;
+    }
+    
+    #icons-contact li img{
+        height: 1.5em;
+    }
+
+    main{
+        padding: 0 3em;
+        margin-top: 9em;
+    }
+
+    h1{
+        font-size: 3.5em;
+    }
+    
+    h2{
+        font-size: 2em;
+    }
+
+    h3{
+        font-size: 2em;
+    }
+    
+    p{
+        font-size: 1.2em;
+        margin-top: .5em;
+    }
+
+    /*main welcome*/
+    .content-welcome{
+        margin-top: 5em;
+    }
+}
