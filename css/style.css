@@ -21,6 +21,11 @@ h3{
     color: #FF0040;
 }
 
+h4{
+    font-size: 2em;
+    color: #FFFFFF;
+}
+
 p{
     font-family: 'Mulish';
     font-size: 1.5em;
@@ -139,6 +144,44 @@ main{
     margin-right: 25%;
 }
 
+/*My stacks*/
+#stacks-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Stacks ul li{
+    display: flex;
+}
+
+.Stacks ul li img{
+    height: 2em;
+    margin-right: .5em;
+    margin-top: 2em;
+}
+
+.Stacks h4{
+    margin-top: 1em;
+}
+
+.Stacks ul li p{
+    font-size: 1.2em;
+    margin: .3em 0 0 2em;
+}
+
+/*Projects*/
+.Projects .card-project1 .image-card{
+    display:flex;
+    justify-content: center;
+}
+
+.Projects .card-project1 h4{
+    display:flex;
+    justify-content: center;
+    margin-top: .5em;
+    font-style: italic;
+}
+
 /*javascripts*/
 #BackgroundAnimation-top li{
     display: block;
@@ -178,7 +221,7 @@ main{
     }
     to{
         opacity: 0;
-        transform: translateY(2000px);
+        transform: translateY(3000px);
     }
 }
 
@@ -283,5 +326,10 @@ main{
     /*main welcome*/
     .content-welcome{
         margin-top: 5em;
+    }
+
+    #stacks-list{
+        display: flex;
+        flex-direction: column;
     }
 }
