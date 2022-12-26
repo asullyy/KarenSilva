@@ -431,6 +431,20 @@ footer p {
         flex-direction: column;
     }
 
+    .container-card{
+        width: 14em;
+    }
+    .background-card{
+        width: 14em;
+    }
+
+    .container-card h4{
+        margin-top: 2.5em;
+    }
+    
+    .container-card p{
+        margin: .8em 1em;
+    }
     .arrow-card-left{
         top: 187em;
     }
