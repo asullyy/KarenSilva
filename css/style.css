@@ -170,18 +170,116 @@ main{
 }
 
 /*Projects*/
-.Projects .card-project1 .image-card{
-    display:flex;
+
+.show-projects{
+    display: flex;
+    align-content: space-between;
+}
+
+.show-projects i{
+    margin-top: 30%;
+    color: #00FF66;
+    font-size: 1.8em;
+    font-weight: bold;
+    align-items: center;
+}
+
+
+.container-projects{
+    overflow-x: auto;
+    width: 65em;
+    margin: 0 3em;
+}
+
+/*escondendo scroll p o chrome*/
+.container-projects::-webkit-scrollbar {
+    display: none;
+}
+
+.container-cards-list{
+    height: 19em;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 2em;
+}
+
+.container-card{
+    background-color: #0D1117;
+    width: 15em;
+    height: 14em; /*17em total*/
+    border-radius: 30px 0 30px 0;
+    opacity: 20%;
+    margin: 0 0.5em 0 0.5em;
+}
+
+.current-item{
+    height: 19em; /*17em total*/
+    transition: 1s;
+    opacity: 100%;
+}
+
+.container-card h4{
+    font-size: 1.5em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.container-card p{
+    display: none;
+    text-align: center;
+    font-size: 1em;
+    margin: 1em;
+}
+
+.container-card p i{
+    font-size: 1.3em;
+    color: #FF0040;
+    margin: 0 .3em;
+}
+
+.background-card{
+    width: 15em;
+    height: 6em;
+    background-color: #252E3A;
+    border-radius:  30px 0 0 0;
+    border-bottom: 0.3em solid #00FF66;
+    display: flex;
     justify-content: center;
 }
 
-.Projects .card-project1 h4{
-    display:flex;
-    justify-content: center;
-    margin-top: .5em;
-    font-style: italic;
+.image-card{
+    width: 8.5em;
+    height: 8.5em;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    margin-top: 1em;
 }
 
+.arrow-card-left{
+    position: absolute;
+    top: 138em;
+}
+
+.arrow-card-right{
+    position: absolute;
+    right: 10em;
+    top: 138em;
+}
+
+/*Footer*/
+footer{
+    margin-top: 1em;
+    background-color: #0D1117;
+    height: 200px;
+}
+
+footer p {
+    margin-bottom: 0;
+    text-align: center;
+    padding: 3em;
+}
 /*javascripts*/
 #BackgroundAnimation-top li{
     display: block;
@@ -221,7 +319,7 @@ main{
     }
     to{
         opacity: 0;
-        transform: translateY(3000px);
+        transform: translateY(2550px);
     }
 }
 
@@ -331,5 +429,14 @@ main{
     #stacks-list{
         display: flex;
         flex-direction: column;
+    }
+
+    .arrow-card-left{
+        top: 177em;
+    }
+    
+    .arrow-card-right{
+        right: 3em;
+        top: 177em;
     }
 }
