@@ -15,6 +15,7 @@ controls.forEach(control => {
         var pAux = itens[currentItem].querySelector(".container-card p");
         pAux.style.display = "none";
 
+
         if(isLeft){
             currentItem -= 1;
         }else{
@@ -40,5 +41,6 @@ controls.forEach(control => {
         
         var p = itens[currentItem].querySelector(".current-item p");
         p.style.display = "block";
+
     })
 });

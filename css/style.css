@@ -218,6 +218,7 @@ main{
     opacity: 100%;
 }
 
+
 .container-card h4{
     font-size: 1.5em;
     color: white;
@@ -233,12 +234,6 @@ main{
     margin: 1em;
 }
 
-.container-card p i{
-    font-size: 1.3em;
-    color: #FF0040;
-    margin: 0 .3em;
-}
-
 .background-card{
     width: 15em;
     height: 6em;
@@ -249,13 +244,33 @@ main{
     justify-content: center;
 }
 
+.background-card i{
+    display: flex;
+    flex-direction: column;
+}
 .image-card{
     width: 8.5em;
     height: 8.5em;
     border-radius: 50%;
-    background-color: antiquewhite;
     margin-top: 1em;
 }
+
+#card-1{
+    background-image: url(../img/mathplay.png);
+}
+#card-2{
+    background-image: url(../img/build.png);
+}
+#card-3{
+    background-image: url(../img/build.png);
+}
+#card-4{
+    background-image: url(../img/build.png);
+}
+#card-5{
+    background-image: url(../img/build.png);
+}
+
 
 .arrow-card-left{
     position: absolute;
